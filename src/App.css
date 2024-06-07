@@ -1,0 +1,186 @@
+.App {
+  font-family: 'Arial', sans-serif; /* Убедитесь, что это шрифт из PDF */
+  background-color: #ffffff; /* Цвет фона */
+  color: #333333; /* Основной цвет текста */
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+}
+
+.preview {
+  text-align: left;
+  padding: 100px 100px;
+  max-width: 600px;
+  display: flex;
+  margin: 100px;
+}
+
+.preview h1 {
+  font-size: 2.5em; /* Размер шрифта заголовка */
+  margin: 20;
+  color: #333333;
+}
+
+.preview p {
+  font-size: 1.2em; /* Размер шрифта подзаголовка */
+  color: #666666;
+  margin: 20;
+}
+
+.preview button {
+  background-color: #9c1212;
+  color: white;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+}
+
+.previewhand {
+  position: relative;
+  max-width: 400px;
+  max-width: 400px;
+}
+
+.product-list {
+  background-color: #6f7285;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.product {
+  display: grid;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  max-width: 200px;
+}
+
+.product h1 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.product h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.product p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.product button {
+  background-color: #36312f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #36312f;
+}
+
+.advantages {
+  display: grid;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.advantages h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.advantages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages li {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.contact-form h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-form p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.reviews {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.reviews h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reviews blockquote {
+  border-left: 5px solid #ccc;
+  margin: 10px 0;
+  padding-left: 10px;
+  color: #777;
+  font-size: 1.2em;
+}
