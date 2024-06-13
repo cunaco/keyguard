@@ -64,7 +64,7 @@
 }
 
 .product {
-  display: grid;
+  display: flex;
   justify-content: center;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -106,7 +106,7 @@
 }
 
 .product {
-  display: grid;
+  display: flex;
   justify-content: center;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -206,7 +206,7 @@
 }
 
 .achievements {
-  display: grid;
+  display: flex;
   justify-content: center;
   background-color: white;
   padding: 20px;
@@ -251,12 +251,3 @@
   text-decoration: underline;
 }
 
-.App {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
-  color: #333333;
-  padding: 20px;
-  display: grid;
-  justify-content: center;
-  margin: 0 auto;
-}
