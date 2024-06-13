@@ -8,6 +8,20 @@ import five from '../src/assets/safe.png'
 import six from '../src/assets/stonks.png'
 import seven from '../src/assets/ufo.png'
 
+function App() {
+    return (
+      <div className="App">
+        <Header />
+        <Product />
+        <Advantages />
+        <ContactForm />
+        <Reviews />
+        <Achievements />
+        <Footer />
+      </div>
+    );
+  }
+  
 function Header() {
     return (
         <header className="header">
@@ -133,22 +147,6 @@ function Footer() {
               <a href="#">VK</a>
           </div>
       </footer>
-  );
-}
-
-
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Product />
-      <Advantages />
-      <ContactForm />
-      <Reviews />
-      <Achievements />
-      <Footer />
-    </div>
   );
 }
 
