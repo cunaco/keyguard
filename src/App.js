@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import one from '../src/assets/headone.png'
 import two from '../src/assets/headtwo.png'
-import title from '../src/assets/title.png'
 import three from '../src/assets/hand.png'
 import four from '../src/assets/aim.png'
 import five from '../src/assets/safe.png'
@@ -16,14 +15,17 @@ function Header() {
                 <img src={one} alt="Matchstick" />
                 <img src={two} alt="Woman with Apple" />
             </div>
-            <img className="title" src={title}></img>
             <div className="header-text">
                 <h1>НЕУЛОВИМЫЕ РЕШЕНИЯ</h1>
-                <p>Специалисты группы компаний “FORSAKEN” являются первыми на рынке анонимных услуг...</p>
+                <p>Специалисты группы компаний “FORSAKEN” являются 
+                первыми на рынке анонимных услуг. Мы первыми реализуем 
+                ваши самые смелые фантазии, разрешаем самые 
+                безысходные случаи, к нам обращаются с полной 
+                уверенностью получить желаемый результат.
+                </p>
                 <button>Подробнее</button>
             </div>
             <div className="previewhand">
-            <img src={three}></img>
             </div>
         </header>
     );
