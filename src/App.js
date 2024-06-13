@@ -3,10 +3,16 @@ import './App.css';
 import one from '../src/assets/headone.png'
 import two from '../src/assets/headtwo.png'
 import three from '../src/assets/hand.png'
+import advantages from '../src/assets/advantages.png'
 import four from '../src/assets/aim.png'
 import five from '../src/assets/safe.png'
 import six from '../src/assets/stonks.png'
 import seven from '../src/assets/ufo.png'
+import facebook from '../src/assets/facebook.png'
+import instagram from '../src/assets/instagram.png'
+import vk from '../src/assets/vk.png'
+import twitter from '../src/assets/twitter.png'
+
 
 function App() {
     return (
@@ -26,20 +32,22 @@ function Header() {
     return (
         <header className="header">
             <div className="header-image">
-                <img src={one} alt="Matchstick" />
-                <img src={two} alt="Woman with Apple" />
+                <img src={one} className="Matchstick"></img>
+                <img src={two} className="Woman with Apple"></img>
             </div>
-            <div className="header-text">
-                <h1>НЕУЛОВИМЫЕ РЕШЕНИЯ</h1>
-                <p>Специалисты группы компаний “FORSAKEN” являются 
-                первыми на рынке анонимных услуг. Мы первыми реализуем 
-                ваши самые смелые фантазии, разрешаем самые 
-                безысходные случаи, к нам обращаются с полной 
-                уверенностью получить желаемый результат.
-                </p>
-                <button>Подробнее</button>
-            </div>
-            <div className="previewhand">
+            <div className='header-container'>
+                <div className="header-text">
+                    <h1>НЕУЛОВИМЫЕ РЕШЕНИЯ</h1>
+                    <p>Специалисты группы компаний “FORSAKEN” являются 
+                    первыми на рынке анонимных услуг. Мы первыми реализуем 
+                    ваши самые смелые фантазии, разрешаем самые 
+                    безысходные случаи, к нам обращаются с полной 
+                    уверенностью получить желаемый результат.
+                    </p>
+                    <button>Подробнее</button>
+                </div>
+                <div className="previewhand"><img src={three}></img>
+                </div>
             </div>
         </header>
     );
@@ -47,11 +55,17 @@ function Header() {
 
 function Product() {
     return (
+        <>
+        <div className="product-header">
+        <h1>Выберите продукт</h1>
+        <p>Подберите страховой продукт, который наилучшим образом
+        подойдёт именно Вам</p>
+        </div>
         <section className="product-list">
             <div className="product">
                 <h2>ЛИКВИДАЦИЯ</h2>
                 <p>от 14.88 ₿</p>
-                <button>Заказать</button>
+                <button to="/buy.js">Заказать</button>
             </div>
             <div className="product">
                 <h2>ТРАНСПОРТ</h2>
@@ -69,22 +83,17 @@ function Product() {
                 <button>Заказать</button>
             </div>
         </section>
+        </>
     );
 }
 
-function Advantages() {
+const Advantages = () => {
     return (
-        <section className="advantages">
-            <h2>Почему доверяют</h2>
-            <ul>
-                <li>Полная ответственность</li>
-                <li>Результат</li>
-                <li>Скидки постоянным клиентам</li>
-                <li>Анонимность</li>
-            </ul>
-        </section>
+      <section className="advantages">
+        <img src={advantages}></img>
+      </section>
     );
-}
+  };
 
 function ContactForm() {
     return (
@@ -97,6 +106,8 @@ function ContactForm() {
                 <select>
                     <option>Консультация</option>
                     <option>Страхование</option>
+                    <option>Продукт</option>
+                    <option>Продукт</option>
                     <option>Продукт</option>
                 </select>
                 <button type="submit">Заказать услугу</button>
@@ -133,18 +144,18 @@ function Achievements() {
 function Footer() {
   return (
       <footer className="footer">
+          <div className="social-media">
+              <a href="#"><img src={facebook}></img></a>
+              <a href="#"><img src={twitter}></img></a>
+              <a href="#"><img src={instagram}></img></a>
+              <a href="#"><img src={vk}></img></a>
+          </div>
           <div className="footer-content">
               <p>О компании</p>
               <p>Новости</p>
               <p>Помощь</p>
               <p>Контакты</p>
               <p>© 2024</p>
-          </div>
-          <div className="social-media">
-              <a href="#">Facebook</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-              <a href="#">VK</a>
           </div>
       </footer>
   );
